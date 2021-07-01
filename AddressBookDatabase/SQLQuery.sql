@@ -51,5 +51,11 @@ select * from contacts where state = 'karnataka' order by firstName asc
 -- adding column of type Relation to contact by default will be 'friends'
 alter table contacts add relation varchar(255) not null default 'friends';
 -- updating contact relation column to type 'family'
-update contacts set relation = 'family' where firstName = 'John'
+update contacts set relation = 'family' where firstName = 'John';
+--displat table
+select * from contacts;
+
+--UC10 --ablity to get count by type in contacts
+select Count(relation) from contacts where relation = 'friends' 
+select Count(relation) from contacts where relation = 'family' 
 
