@@ -40,3 +40,9 @@ select * from contacts where city = 'bangalore' or state = 'karnataka';
 select Count(city) from contacts
 
 select count(state) from contacts
+
+--UC8 -- ability to retrieve enteries sorted alphabetically by Person's name for given city
+-- ascending order
+select * from contacts where state = 'karnataka' order by firstName desc
+-- descending order
+select * from contacts where state = 'karnataka' order by firstName asc
