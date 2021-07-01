@@ -33,5 +33,5 @@ delete from contacts where firstName = 'emily';
 --display table
 select * from contacts
 
---UC6 -- ability to retrieve contact using city or state from table
+--UC6 -- ability to retrieve contact using city or state from the table
 select * from contacts where city = 'bangalore' or state = 'karnataka';
