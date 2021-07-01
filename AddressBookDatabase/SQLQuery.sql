@@ -35,3 +35,8 @@ select * from contacts
 
 --UC6 -- ability to retrieve contact using city or state from the table
 select * from contacts where city = 'bangalore' or state = 'karnataka';
+
+--UC7 -- ability to get size of address book by city and state
+select Count(city) from contacts
+
+select count(state) from contacts
