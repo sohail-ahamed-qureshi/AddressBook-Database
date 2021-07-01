@@ -26,3 +26,9 @@ Update contacts set phoneNumber =  12345567809 where firstName = 'terisa';
 
 --display table
 select * from contacts
+
+--UC5 -- ability to delete existing contact using their name
+delete from contacts where firstName = 'emily';
+
+--display table
+select * from contacts
