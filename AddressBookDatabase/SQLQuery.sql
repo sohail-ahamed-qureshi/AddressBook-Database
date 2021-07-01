@@ -46,3 +46,10 @@ select count(state) from contacts
 select * from contacts where state = 'karnataka' order by firstName desc
 -- descending order
 select * from contacts where state = 'karnataka' order by firstName asc
+
+--UC9 --ability to identify the relation with Contact person
+-- adding column of type Relation to contact by default will be 'friends'
+alter table contacts add relation varchar(255) not null default 'friends';
+-- updating contact relation column to type 'family'
+update contacts set relation = 'family' where firstName = 'John'
+
